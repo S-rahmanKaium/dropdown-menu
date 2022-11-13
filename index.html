@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown menu</title>
+    <style>
+        .dropbtn {
+            color: yellowgreen;
+            background-color: rgb(33, 59, 54);
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            /* position: relative; */
+            cursor: pointer;
+            padding: 2px 8px;
+            text-align: center;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            /* display: flex; */
+
+        }
+
+        .dropdownContent {
+
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 110px;
+            z-index: 1;
+
+        }
+
+        .dropdownContent a {
+            color: black;
+            text-decoration: none;
+            padding: 2px 1px;
+            display: flex;
+        }
+
+        .dropdownContent a:hover {
+            background-color: green;
+            color: aquamarine;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifFFF;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        .dropdown:hover .dropdownContent {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            flex-flow: column-reverse;
+
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: green;
+            color: blueviolet;
+            font-weight: bold;
+            font-display: swap;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            text-decoration: underline;
+            color: beige;
+            background-color: black;
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My first dropdown button</h1>
+    <div class="dropdown">
+        <button class="dropbtn">
+            Service
+        </button>
+        <div class="dropdownContent">
+            <a href="#">Online Sevices</a>
+            <a href="#">Live Service</a>
+            <a href="#">Direct Home</a>
+        </div>
+    </div>
+</body>
+
+</html>
